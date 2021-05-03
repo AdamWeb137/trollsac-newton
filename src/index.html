@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styling.css">
+        <script src="method.js"></script>
+        <script src="link.js"></script>
+        <title>Troll-sac Newton's Method</title>
+    </head>
+    <body>
+        <div id="header">
+            <div id="headcontainer">
+                <img id="logo" src="logo.png">
+                <h1>Troll-sac Newton's Method</h1>
+            </div>
+        </div>
+
+        <div id="options">
+            <div class="option" onmouseup="change_state(0)">Expression</div>
+            <div class="option" onmouseup="change_state(1)">Equation</div>
+        </div>
+
+        <div id="form">
+            <div id="form_holder">
+                <div id="actform">
+                    <div id="expression" class="flex_center">
+                        <p>Expression: </p>
+                        <textarea id="ex_box"></textarea>
+                    </div>
+
+                    <div id="equation" style="display: none;" class="flex_center">
+                        <p>Equation:</p>
+                        <textarea id="eq_box1"></textarea>
+                        <p>=</p>
+                        <textarea id="eq_box2"></textarea>
+                    </div>
+
+                    <div id="guess_div">
+                        Initial Guess: 
+                        <input type="number" id="init" value="1">
+                    </div>
+
+                    <div id="iter_div">
+                        Iterations: 
+                        <input type="number" id="iter" value="100">
+                    </div>
+
+                    <div id="check_div">
+                        Check for extrenuous: 
+                        <input type="checkbox" id="check" value="true" checked>
+                    </div>
+
+                    <div id="calculate">Calculate!</div>
+                </div>
+            </div>
+            <div id="ans"></div>
+        </div>
+
+    </body>
+</html>
